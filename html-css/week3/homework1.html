@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="homework1.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Customer Info1</title>
+</head>
+<body>
+    <header>
+        <div id="logo">Logo</div>
+        <div id="nav">Navigation</div>
+    </header>   
+    <section>
+        <div class="intro">
+            <h1>Sign up to yourcustomtailor.com</h1>
+            <p>We can't wait to help you improve your life-style and gain attention from people around you</p>
+            <p>Sign up below and save up to 70% on apparel, hand-bags and cosmetics. Our agents are busy picking up the best offer 
+            that matches your preference and style. Every week we'll send you a hand-picked selection. We need to know a few about your first..
+            </p>
+            <h2>Step 1/4: Tell us who you are</h2>
+            <h4>Progress</h4>
+            <div class="progressbar">
+                <span id="filled1"></span>
+            </div>
+            <h4>Nice to meet you. Let us spend a minute to get to know each other? Please, enter the following.</h4>
+    
+    <form action="index.php">
+        <table class="name-addr">
+            <tr>
+                <th><label for="firstname">First Name*</label></th>
+                <th><input type="text" required name="userinfo" id="firstname"></th>
+                <th><label for="lastname">Last Name*</label></th>
+                <th><input type="text" required name="userinfo" id="lastname"></th>
+            </tr>
+            <tr>
+                <td><label for="country">Country*</label></td>
+                 <td><select name="country" id="country">
+                    <option value="" selected></option>
+                    <option value="denmark">Denmark</option>
+                    <option value="sweden">Sweden</option>
+                    <option value="norway">Norway</option>
+                    <option value="finland">Finland</option>
+                    <option value="germany">Germany</option>
+                </select></td>
+            </tr>
+            <tr>           
+                <td><label for="street">Street Address*</label></td>
+                <td><input type="text" required name="userinfo" id="street"></td>
+                <td><label for="postcode">Post Code*</label></td>
+                <td><input type="text" required name="userinfo" id="postcode"></td>
+            </tr>  
+        </table>
+        <div class="profile1">
+            <table>
+                <tr>
+                    <th><label for="profile">Profile Description 
+                        <h6> <i> Provide a short <br> Description of yourself <br>
+                        to be displayed on <br> our social media page</i></h6></label></th>
+                    <th> <textarea id="profile"></textarea> </th>    
+                </tr>
+            </table>  
+        </div>   
+            <p> Use the same address for billing and shipping? Uncheck below to fill out a seperate address.</p>
+                <label for="toggle-1">Shipping Address</label>
+                <input type="checkbox" checked id="toggle-1">
+        <div class="shipping"> 
+            <table>
+                <tr>
+                    <th><label for="firstname">First Name*</label></th>
+                    <th><input type="text" required name="userinfo" id="firstname"></th>
+                    <th><label for="lastname">Last Name*</label></th>
+                    <th><input type="text" required name="userinfo" id="lastname"></th>
+                </tr>
+                <tr>
+                    <td><label for="country">Country*</label></td>
+                    <td>  
+                    <select name="country" id="country">
+                        <option value="" selected></option>
+                        <option value="denmark">Denmark</option>
+                        <option value="sweden">Sweden</option>
+                        <option value="norway">Norway</option>
+                        <option value="finland">Finland</option>
+                        <option value="germany">Germany</option>
+                    </select> 
+                    </td>
+                </tr>
+                <tr>           
+                    <td><label for="street">Street Address*</label></td>
+                    <td><input type="text" required name="userinfo" id="street"></td>
+                    <td><label for="postcode">Post Code*</label></td>
+                    <td><input type="text" required name="userinfo" id="postcode"></td>
+                </tr>  
+            </table>
+            <table>
+                <tr>
+                    <th><label for="profile">Profile Description <br> 
+                        <h6> <i> Provide a short <br> Description of yourself <br>
+                            to be displayed on <br> our social media page</i></h6></label></th>
+                    <th> <textarea id="profile"></textarea></th>    
+                </tr>
+            </table>    
+        </div> 
+    </form> 
+</section>
+    
+    <footer>
+        <div class="next"><a href="homework2.html">Next step</a></div>
+    </footer>
+    
+    
+</body>
+</html>
