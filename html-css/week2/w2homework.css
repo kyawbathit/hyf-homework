@@ -1,9 +1,9 @@
 
-header { margin-left: 150px; 
-    justify-content: center;
+header {justify-content: center;
     text-align: left;
+    margin: 0;
 }
-h1 {font-family: fantasy;
+h1 {font-family: Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     font-size: 1.5em;
     letter-spacing: 4px;
@@ -16,17 +16,20 @@ h4 {font-family: fantasy;
     text-align: left;
     margin-left: 30px;
 }
-p { font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin: 30px 30px 10px; 
+p { 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 10px 10px 10px; 
 }
 
-nav ul { list-style-type: none;
+nav ul { 
+    list-style-type: none;
     margin: 10px;
     padding: 10px;
     overflow: hidden;
 }
   
-nav li { float: left; 
+nav li { 
+    float: left; 
     border-right: 1px solid #bbb;
 }
   
@@ -34,78 +37,113 @@ nav li:last-child {
     border-right: none;
 }
 
-li a { display: block;
+li a { 
+    display: block;
     color: black;
     text-align: center;
     padding: 10px 16px;
     text-decoration: none;
 }
 
-li a:hover { background-color:rgb(92, 92, 74);}
+li a:hover { 
+    background-color:rgb(92, 92, 74);}
 
-#banner {width: 100%;}
-main { width: 100%;
+#banner {
+    width: 100%;
+}
+main { 
+    width: 100%;
     display: flex;
     justify-content: center;
 }
-section { width: 100%;
+section { 
+    width: 100%;
     display: flex;
     justify-content: center;
 }
 
-.sidebar { width: 30%;
+.sidebar { 
+    width: 30%;
     float: left;
-    margin: 20px; 
+    padding: 10px; 
 }
 
-.content { width: 50%;
+.content { 
+    width: 50%;
     float: right;
-    margin: 20px; 
+    padding: 10px; 
 }
-#logos { display: grid;
+#logos { 
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 100px 100px;
     grid-gap: 10px;
-    margin-left: 30px;
 }
 
-footer { background-color: lightseagreen;
+footer { 
+    background-color: lightseagreen;
     display: flex;
     justify-content: center;
     width: 100%;
     height: 10%;
 }
-.footer { display: flex;
-    width: 100%; 
-    justify-content: center;
-}
-.foot-links ul { list-style-type: none;
+
+.foot-links ul { 
+    list-style-type: none;
     padding: 10px;
     overflow: hidden;
 }
   
-.foot-links li { border-bottom: 1px solid #bbb;
+.foot-links li { 
+    border-bottom: 1px solid #bbb;
     border-right:none;
 }
-.foot-links li:last-child {border-bottom: none;}   
+.foot-links li:last-child {
+    border-bottom: none;
+}   
 
 
 /* For Mobile Devices */
-@media only screen and (max-width: 650px) {
-*   {flex-direction: column; }
+@media only screen and (max-width: 400px) {
+*   {
+    flex-direction: column; 
+}
+#banner {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
 
-h1  {font-size: 1em;}
-p   {font-size: 0.8em;}
-
-nav ul { flex-direction: column;
+h1  {
+    font-size: 1em;
+}
+p   {
     font-size: 0.8em;
 }
-li a { line-height: 3em;}
-.sidebar,  .content {width: 100%;
+
+nav ul {
+    flex-direction: column;
+    font-size: 0.8em;
+}
+li a {
+    line-height: .5em;
+    text-align: left;
+}
+.sidebar,  .content {
+    width: 100%;
     padding: 0px;
 }
-.logos img { width: 40%;}
-.foot-links li {width: 100%;
+.box {
+    width: 50%;
+}
+iframe {
+    padding-left: 10px;
+}
+footer { 
+    width: 100%; 
+}
+.foot-links li {
+    width: 100%;
     border: none;
     border-bottom: 1px solid rgb(23, 236, 201);
 }
