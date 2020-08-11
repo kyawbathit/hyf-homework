@@ -1,3 +1,4 @@
+//Full Name
 function getFullName (firstName, surName, useFormalName){
     if (useFormalName === true){
      return `Lord ${firstName} ${surName}`;
