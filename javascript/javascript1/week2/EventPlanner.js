@@ -7,5 +7,5 @@ function getEventWeekday (eventDay){
     let i = (currentDay + eventDay) % 7;
     return weekday[i];
 }
-console.log(getEventWeekday(9));
-console.log(getEventWeekday(3));
+console.log(getEventWeekday(9)); //'Thursday'
+console.log(getEventWeekday(3)); //'Friday'
