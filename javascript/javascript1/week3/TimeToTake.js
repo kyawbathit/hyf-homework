@@ -9,11 +9,11 @@ function calTimeToTake (travalInformation){
   const rhours = Math.floor(hours);
   const minutes = (hours - rhours) * 60;
   const rminutes = Math.round(minutes);
-  return "It will take "+ rhours + " hour(s) and " + rminutes + " minute(s).";
+  return "It takes "+ rhours + " hour(s) and " + rminutes + " minute(s).";
 }
 
 const travelTime = calTimeToTake(travelInformation);
-console.log(travelTime); //'It will take 8 hour(s) and 38 minute(s).'
+console.log(travelTime); //'It takes 8 hour(s) and 38 minute(s).'
 
 
 
