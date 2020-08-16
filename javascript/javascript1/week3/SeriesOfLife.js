@@ -17,6 +17,12 @@ const seriesNum = [
     days: 7,
     hours: 21,
     minutes: 59,
+  },
+  {
+    title: 'The Tudor',
+    days: 5,
+    hours: 22,
+    minutes: 50,
   }
 ];
  const lifeInMin = 80 * (365 * 1440); //days per year and minutes per day
@@ -29,7 +35,7 @@ function spentTimeOnSeries () {
     const percentageOfLife = (oneSeriesInMin / lifeInMin) *100;
      sum += percentageOfLife;
       
-    console.log(`${seriesNum[i].title} took ${percentageOfLife.toFixed(3)}% of my life.`);
+    console.log(`${seriesNum[i].title} Series took ${percentageOfLife.toFixed(3)}% of my life.`);
      } 
     console.log(`In total that was ${sum.toFixed(3)}% of my life.`);
 
