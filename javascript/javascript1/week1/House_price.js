@@ -11,5 +11,5 @@ function estimatePrice (paidPrice, volume, garden) {
   console.log ("It's a bit expensive.");
 }
 };
-estimatePrice(1100000, [5 * 11 * 8], [70]);
-estimatePrice(2500000, [8 * 10 * 10], [100]);
+estimatePrice(paidPrice[0], volume[0], garden[0]); //expensive
+estimatePrice(paidPrice[1], volume[1], garden[1]); //cheap
