@@ -1,4 +1,3 @@
-//Voice Assistant
 // Voice Assistant
 const command = [];
 const greeting = [];
@@ -43,11 +42,14 @@ function getReply(command) {
     const calcsum = sum(calc);
       return `The answer is: ${calcsum}`;
   } if (command.includes("Set time for 4 minutes")) {
-     const myTimer = setInterval(function(){ 
+       const commandArr = command.split(" ");
+    const min = commandArr[commandArr.length - 2];
+    const minInSec = min * 60;
+    const myTimer = setInterval(function(){ 
     clearInterval(myTimer);
-   console.log ("TIME UP!!"); }, 4 * 60 * 1000);
-      return `Timer set for 4 minutes`;
-}
+    console.log ("${min} Minute(s) is UP!!"); }, minInSec * 1000);
+      return `Timer set for ${min} minutes`;
+   }
 }
   
 
