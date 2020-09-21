@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="payment.css">
+    <title>Payment</title>
+</head>
+<body>
+    <form action="send to server">
+    <section class="summary">
+        <h1>Order summary</h1>
+        <table>
+        <tr>
+            <td>Soudfa Plus: 3 months</td>
+            <td class="price"> $33.33/ month</td>
+        </tr>
+    </table>
+    <hr>
+        <table>
+        <tr>
+            <td>Total</td>
+            <td class="price">$100</td>
+            
+        </tr>
+    </table>
+    </section>
+    <h2>Payment Method</h2>
+    <section class="payment">
+
+        <div><input type="image" name="payment" value="card" alt="creditcard" src="paymentcards.png" width="150">
+            <label for="payment">Credit/Debit</label></div>
+        <div><input type="image" name="payment" value="paypal" alt="paypalcard" src="paypal1.jpg" width="150">
+            <label for="payment">PayPal</label>
+        </div>
+
+        </section>
+        <h2>Card Info</h2>
+        <section class="card-info">
+            <div> <h4>Card Number</h4>
+                <input type="text" pattern="[0-9]{16}" title="16 digits" id="cardnumber" name="number" placeholder="1234 1234 1234 1234" onfocus="this.value=''"
+                    required>
+            </div>
+            <div>    <h4>Expirery Date</h4>
+                    <input type="month" id="start" name="start" min="2020-09" max="2025-12" placeholder="MM-YY" required>
+            </div>  
+            <div>       <h4>Security Code</h4>
+            <input type="security" id="pass" name="security" onfocus="this.value=''"
+                minlength="3" value="CVV" required>
+            </div> 
+        </div> 
+        
+            </section>
+            <button id="button">Buy Now</button>
+            <h3>Need Help?</h3>
+        </form>     
+</body>
+</html>

@@ -1,0 +1,120 @@
+
+.summary {
+    width: 100%;
+    background-color: indianred;
+    border: 2px gray;
+    border-radius: 5px;
+}
+h1 {
+    margin-left: 10px;
+    padding: 5px;
+    color: white;
+}
+hr {
+    color: 5px white;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+table {
+    width: 100%;
+    padding: 10px;
+} 
+.summary th, td  {
+    width: 50%;
+    padding: 5px;
+    color: white;
+}
+.price {
+    text-align: right;
+}
+
+h2 {
+    text-align: center;
+}
+.payment {
+    width: 100%;
+    margin: auto;
+    display: flex;
+}
+.payment div {
+    width: 48%;
+    margin: auto;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px gray;
+    border-style: ridge;
+
+}
+.payment div:hover, ::selection {
+    border: 2px indianred ;
+    border-style: ridge;
+    cursor: pointer;
+
+}
+.payment input {
+   display: block;
+   margin: auto;
+   padding: 5px;
+}
+.payment label {
+    display: block;
+    text-align: center;
+    padding: 5px;
+ }
+ /* .card-info table  {
+ display: flex;
+ } */
+.card-info   {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.card-info div {
+      width: 33%;
+      /* padding: 5px; */
+      margin: auto;
+      /* background-color: gray; */
+}
+h4 {
+    text-align: center;
+}
+.card-info input {
+    width: 96%;
+    padding: 5px;
+    margin: 0 auto;
+}
+button {
+    background-color: indianred;
+    border: 2px gray;
+    display: block;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px ;
+    border-radius: 10px;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    text-align:center;
+    cursor: pointer;
+}
+h3 {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px ;
+    font-size: 16px;
+    color:indianred;
+    font-weight: bold;
+    text-align:center;
+
+}
+@media (max-width: 950px) and (max-width: 1199px){
+    .card-info div:first-child {
+        width: 99%;
+      } 
+    .card-info div:nth-child(2),.card-info div:nth-child(3)  {
+        width: 48%;
+    }  
+
+}    

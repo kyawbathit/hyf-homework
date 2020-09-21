@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=20.0">
+    <link rel="stylesheet" href="form2.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <title>Sign Up</title>
+</head>
+<body>
+    <section class="sign-up">
+        <form action="send to server">
+            <H1>Sign Up</H1>
+            <p>It's quick and easy</p>
+                <input class="name" type="text" onfocus="this.value=''" id="first_name" name="name" value="First name">
+                <input class="name" type="text" onfocus="this.value=''" id="last_name" name="name" value="Last name">
+            
+                  <input type="text" onfocus="this.value=''" id="contact" name="contact" value="Mobile number or email"> 
+              <input type="text" onfocus="this.value=''" name="password" id="psw" value="New password"> 
+                       
+            <h3>Birthday</h3>
+            <select name="Birthday" id="month">
+                <option value="Jan">Jan</option>
+                <option value="Feb" selected>Feb</option>
+                <option value="Mar">Mar</option>
+                <option value="Apr">Apr</option>
+                <option value="May">May</option>
+                <option value="Jun">Jun</option>
+                <option value="Jul">Jul</option>
+                <option value="Aug">Aug</option>
+                <option value="Sep">Sep</option>
+                <option value="Oct">Oct</option>
+                <option value="Nov">Nov</option>
+                <option value="Dec">Dec</option>
+            </select>
+            
+            <select name="Birthday" id="day">
+                <option value="01">01</option>
+                <option value="02">02</option>
+                <option value="03">03</option>
+                <option value="04">04</option>
+                <option value="05">05</option>
+                <option value="06">06</option>
+                <option value="07">07</option>
+                <option value="08">08</option>
+                <option value="09">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12" selected>12</option>
+            </select>
+            <select name="Birthday" id="year">
+                <option value="1991">1991</option>
+                <option value="1992">1992</option>
+                <option value="1993">1993</option>
+                <option value="1994">1994</option>
+                <option value="1995">1995</option>
+                <option value="1996">1996</option>
+                <option value="1997">1997</option>
+                <option value="1998">1998</option>
+                <option value="1999">1999</option>
+                <option value="2000">2000</option>
+                <option value="2001">2001</option>
+                <option value="2002">2002</option>
+            </select>
+            <i style="font-size:15px" class="fa">&#xf059; <span class="tooltip">Want to know more?</span></i>
+            
+            <h3>Gender</h3>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="gender">Female</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="gender">Male</label>
+                <input type="radio" id="custom" name="gender" value="custom">
+                <label for="gender">Custom</label>
+            <i style="font-size:15px" class="fa">&#xf059; <span class="tooltip">Want to know more?</span></i>
+                <p>By clicking Sign Up, you agree to our Terms. Learn how we collect, use and share your
+                    data in our Data Policy and how we use cookies and similar technology in our Cookies Policy. 
+                    You may recieve SM Notifications from us and can opt out any time.
+                </p>
+                <button id="button">Sign Up</button>
+        </form>
+    </section>
+</body>
+</html>

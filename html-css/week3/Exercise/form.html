@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Form</title>
+</head>
+<body>
+    <form action="/to my page">
+        <ul>
+            <li><label for="name">Name:</label>
+                <input type="text" placeholder="Your name" id="name" name="user_name" required> 
+            </li>
+            <li>
+                <label for="email">Email:</label>
+                <input type="email" placeholder="Your email address" id="mail" name="user_email" required>
+            </li>
+            <li>
+                <label for="message">Message</label>
+                <textarea id="msg" name="user_message"></textarea>
+            </li>
+            <li class="button">
+                <button type="submit">Send your message</button>
+            </li>
+        </ul>
+    </form>
+    <form action="to check something">
+        <label for="checkbox">CheckBox</label>
+        <input type="checkbox" checked>
+    </form>
+      
+  <fieldset style="width: 500px; margin: 0 auto;">
+      <legend>What are your fav music bands?</legend>
+      <ul>
+          <li>
+              <label for="metal">Metallica</label>
+              <input type="radio" id="metallica" name="bands" value="metal" checked>
+          </li>
+          <li>
+              <label for="pantera">Pantara</label>
+              <input type="radio" id="pantera" name="bands" value="pantera">
+          </li>
+          <li>
+              <label for="tool">Tool</label>
+              <input type="radio" id="tool" name="band" value="tool">
+          </li>
+      </ul>
+  </fieldset>
+</body>
+</html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tailor.css">
+    <title>Your Custom Tailor</title>
+</head>
+<body>
+    <!-- header -->
+    <header class="header">
+        <div id="logo">Logo</div>
+        <div id="head-nav">Navigation</div>
+    </header>
+    <!-- section -->
+        <section>
+            <div class="intro">
+                <h1>Sign up to yourcustomtailor.com</h1>
+                <p>We can't wait to help you improve your life-style and gain attention from people around you</p>
+                <p>Sign up below and save up to 70% on apparel, hand-bags and cosmetics. Our agents are busy picking up the best offer 
+                that matches your preference and style. Every week we'll send you a hand-picked selection. We need to know a few about your first..
+                </p>
+            </div>
+           <!-- step 1 -->
+                <h2>Step 1/4: Tell us who you are</h2>
+                <h4>Progress</h4>
+                <div class="progress-bar">
+                    <div id="completed"></div> 
+                </div>
+                <h4>Nice to meet you. Let us spend a minute to get to know each other? Please, enter the following.</h4>
+  
+                <!-- form starts here -->
+             <form action="send to server">
+                <table>
+                    <tr>
+                        <th><label for="first-name">First name*</label></th>
+                        <th><input type="text" name="user-info" id="first-name" required></th>
+                        <th><label for="last-name">Last name*</label> </th>
+                        <th><input type="text" name="user-info" id="first-name" required></th>
+                    </tr>
+                    <tr>   
+                        <td><label for="country">Country*</label></td>
+                        <td><select name="country" id="country"> 
+                            <option value="" selected></option>
+                            <option value="denmark">Denmark</option>
+                            <option value="sweden">Sweden</option>
+                            <option value="norway">Norway</option>
+                            <option value="finland">Finland</option>
+                            <option value="germany">Germany</option></select></td>
+                    </tr>
+                    <tr>
+                        <td><label for="street">Address*</label> </td>
+                        <td><input type="text" name="address" id="street"></td>
+                        <td><label for="postcode">Postcode*</label></td>
+                        <td><input type="text" name="address" id="postcode"></td>
+                    </tr>
+                </table>
+                <div class="profile">
+                    <table>
+                    <tr>   
+                        <td rowspan="1"><label for="profile">Profile Description <br>
+                            <span style="font-style: italic; font-size: 15px; text-align: center;">
+                                Provide a short Description of <br> yourself 
+                            to be displayed <br> on our social media page</span> <br> </label></td>
+                        <td colspan="4"><textarea name="" id="profile" cols="140" rows="10"></textarea></td>
+                    </tr>
+                    </table>
+                </div>
+                <h4>Use the same address for billing and shipping? Uncheck below to fill out a seperate address.</h4>
+                
+                <!-- toggle checkbox  -->
+                   <label class="checkbox-label" for="toggle">Shipping Address</label> 
+                    <input class="checkbox" type="checkbox" id="toggle" checked> 
+               
+                              
+                <!-- shipping hidden in checked -->
+                <div class="shipping">
+               <h4>Shipping Address</h4>
+               <table>
+                    <tr>
+                        <th><label for="first-name">First name*</label></th>
+                        <th><input type="text" name="user-info" id="first-name" required></th>
+                        <th><label for="last-name">Last name*</label> </th>
+                        <th><input type="text" name="user-info" id="first-name" required></th>
+                    </tr>
+                    <tr>   
+                        <td><label for="country">Country*</label></td>
+                        <td><select name="country" id="country"> 
+                        <option value="" selected></option>
+                        <option value="denmark">Denmark</option>
+                        <option value="sweden">Sweden</option>
+                        <option value="norway">Norway</option>
+                        <option value="finland">Finland</option>
+                        <option value="germany">Germany</option></select></td>
+                    </tr>
+                    <tr>
+                        <td><label for="street">Address*</label> </td>
+                        <td><input type="text" name="address" id="street"></td>
+                        <td><label for="postcode">Postcode*</label></td>
+                        <td><input type="text" name="address" id="postcode"></td>
+                    </tr>
+                </table>
+                 <table class="profile2">
+                    <tr>   
+                        <td rowspan="1"><label for="profile2">Profile Description</label> <br>
+                            <span style="font-style: italic; font-size: 15px; text-align: center;">
+                                Provide a short Description of <br> yourself 
+                            to be displayed <br> on our social media page</span> <br> </td>
+                        <td colspan="4"><textarea name="" id="profile2" cols="140" rows="10"></textarea></td>
+                    </tr>
+                </table>
+            </div>
+            </form>
+        </section>
+        <button id="next">Next step</button> 
+
+       <!-- Contact -->
+        <h2>Step 2/4: How can we reach you?</h2>
+        <h4>Progress</h4>
+        <div class="progress-bar">
+            <div id="completed2"></div> 
+        </div>
+        <h4>We will probably need to stay in touch somehow. Let's know how we can reach you?</h4>
+    <form action="send to server">
+        <table>
+            <tr>
+                <th><label for="email">Email*</label></th>
+                <th><input type="text" name="contact" id="email" required></th>
+                <th><label for="phone">Phone</label> </th>
+                <th><input type="text" name="contact" id="phone"></th>
+            </tr>
+            <tr>   
+                <td><label for="password">Password*</label></td>
+                <td><input type="text" name="contact" id="password" required></td>
+            </tr>
+            <tr>
+                <td><label for="re-passord">Re-enter Password*</label> </td>
+                <td><input type="text" name="contact" id="re-passord"></td>
+            </tr>
+        </table>
+        <h4>I want to sign up for the newsletter</h4>
+        <table>
+            <tr>
+                <th><label for="weekly"> Weekly News</label></th>
+                <th><input type="radio" id="weekly" name="contact" checked> </th>
+                <th><label for="monthly"> Monthly News</label></th>
+                <th><input type="radio" id="monthly" name="contact"> </th>
+                <th><label for="no-send">Don't send me news</label></th>
+                <th><input type="radio" id="no-send" name="contact"> </th>
+            </tr>
+        </table>
+        </form>
+            <button id="next">Next step</button> 
+            <!-- Preference -->
+        <h2>Step 3/4: Time to learn about your preferences?</h2>
+        <h4>Progress</h4>
+        <div class="progress-bar">
+            <div id="completed2"></div> 
+        </div>
+        <h4>What kind of items are you interested in offers on??</h4>
+    <form action="send to server">
+            <ul class="preference" style="list-style: none;">
+           
+                <li><label for="apparal">Apparal
+                    <input class="mycheckbox" type="checkbox" name="preference" id="apparal" checked>
+                    <span></span></label></li>
+                <li><label for="accessories">Accessories
+                    <input class="mycheckbox" type="checkbox" name="preference" id="accessories" checked>
+                    <span></span></label></li>
+                <li><label for="handbags">Handbags
+                    <input class="mycheckbox" type="checkbox" name="preference" id="handbags" ><span></span></label></li>
+                <li><label for="jewelry">Jewelry</label>
+                    <input class="mycheckbox" type="checkbox" name="preference" id="jewelry" checked><span></span></label></li>
+                <li><label for="shoes">Shoes</label>
+                    <input class="mycheckbox" type="checkbox" name="preference" id="shoes" checked><span></span></label></li>
+            </ul>
+        <h4>Choose the images that resemble your style.</h4>
+        <div item-list>
+            <ul class="item-list" style="list-style: none;">
+                <li><img src="xbox.png" alt="xbox" width="100">
+                    <label for="item1">Select</label>
+                    <input type="checkbox" name="items" id="item1" checked></li>
+                <li><img src="xbox.png" alt="xbox" width="100">
+                    <label for="item2">Select</label>
+                    <input type="checkbox" name="items" id="item2" ></li>
+                <li><img src="xbox.png" alt="xbox" width="100">
+                    <label for="item3">Select</label>
+                    <input type="checkbox" name="items" id="item3" checked></li>
+                <li><img src="xbox.png" alt="xbox" width="100">
+                    <label for="item4">Select</label>
+                    <input type="checkbox" name="items" id="item4" checked></li>
+                <li><img src="xbox.png" alt="xbox" width="100">
+                    <label for="item5">Select</label>
+                    <input type="checkbox" name="items" id="item5" ></li>
+                <li><img src="xbox.png" alt="xbox" width="100">
+                    <label for="item6">Select</label>
+                    <input type="checkbox" name="items" id="item6"></li>
+                <li><img src="xbox.png" alt="xbox" width="100">
+                    <label for="item7">Select</label>
+                    <input type="checkbox" name="items" id="item7" checked></li>
+                <li><img src="xbox.png" alt="xbox" width="100">
+                    <label for="item8">Select</label>
+                    <input type="checkbox" name="items" id="item8" checked></li>
+            </ul>
+
+        </div>
+       </form> 
+       <button id="next">Next step</button> 
+       <h2>Step 4/4: Payment</h2>
+        <h4>Progress</h4>
+        <div class="progress-bar">
+            <div id="completed2"></div> 
+        </div>
+       <h4>Please fill in your payment data.</h4>
+        <div class="payment">
+            <table>
+                <tr>
+                    <th><label for="name-card">Name on card</label></th>
+                    <th><input type="text" name="card-info" id="name-card" required></th>
+                </tr>  
+                <tr>   
+                    <td><label for="card-type">Card type</label></td>
+                    <td><select name="card-info" id="card-type"> 
+                    <option value="" selected></option>
+                    <option value="denmark">Master</option>
+                    <option value="sweden">Visa</option>
+                    <option value="norway">American Express</option>
+                    </select></td>
+                 </tr>
+                  <tr>
+                    <td><label for="card-number">Credit card number</label> </td>
+                    <td><input type="text" name="card-info" id="card-number"></td>
+                    <td><label for="fname">First name</label></td>
+                    <td><input type="text" name="card-info" id="fname"></td>
+                </tr>
+                <tr>
+                    <td><label for="exmonth">Expiry month</label> </td>
+                    <td><input type="text" name="card-info" id="exmonth"></td>
+                    <td><label for="exyear">Expiry year</label></td>
+                    <td><input type="text" name="card-info" id="exyear"></td>
+                </tr>
+                <tr>
+                    <td><label for="ccv">CCV</label></td>
+                    <td><input type="text" name="card-info" id="ccv"></td>
+                </tr>
+            </table>
+            <button id="next">Next step</button> 
+            <script src="tailor.js"></script>
+</body>
+</html>

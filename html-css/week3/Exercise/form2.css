@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.sign-up {
+    width: 50%;
+    background-color: whitesmoke;
+}
+p { 
+    padding-top: 5px;
+}
+form {
+    margin-left: 10px;
+}
+input {
+    padding: 1%;
+    opacity: 50%;
+    margin-top: 5px;
+    border-radius: 1px;
+}
+.name {
+    width: 46.3%;
+    margin-right: auto;
+}
+#contact, #psw {
+    width: 96%;
+}
+h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+select {
+    padding: 5px;
+}
+.fa {
+    position: relative;
+    display: inline-block;  
+    
+}
+  
+.fa .tooltip  {
+    visibility: hidden;
+    width: 200px;
+    color: gray;
+    margin-left: 5px;
+    position: absolute;
+    z-index: 1;
+}
+  
+.fa:hover .tooltip {
+    visibility: visible;
+}
+
+button {
+    width: 45%;
+    margin-top: 10px;
+    padding: 10px 32px;
+    border-radius: 10px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    text-align:center;
+    background-color:green;
+    cursor: pointer;
+}
+@media (max-width: 950px) and (max-width: 1199px){
+    .sign-up {
+        width: 100%;
+        background-color: whitesmoke;
+    }
+    .name {
+        width: 96%;
+    }
+    } 
