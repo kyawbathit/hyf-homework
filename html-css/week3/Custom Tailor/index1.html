@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Your Custom Tailor</title>
+</head>
+<body>
+    <!-- header -->
+    <header class="header">
+        <div id="logo">Logo</div>
+        <div id="head-nav">Navigation</div>
+    </header>
+    <!-- section -->
+        <h1>Sign up to yourcustomtailor.com</h1>
+            <section class="step1">
+                <div class="intro">
+                    <p>We can't wait to help you improve your life-style and gain attention from people around you</p>
+                    <p>Sign up below and save up to 70% on apparel, hand-bags and cosmetics. Our agents are busy picking up the best offer 
+                     that matches your preference and style. Every week we'll send you a hand-picked selection. We need to know a few about your first..</p>
+                </div>
+                
+                <h2>Step 1/4: Tell us who you are</h2>
+                <h4>Progress</h4>
+                <div class="progress-bar">
+                    <div id="completed1"></div> 
+                </div>
+                <h4>Nice to meet you. Let us spend a minute to get to know each other? Please, enter the following.</h4>
+  
+                <!-- form starts here -->
+             <form action="/index2.html">
+                <table>
+                    <tr>
+                        <th><label for="first-name">First name*</label></th>
+                        <th><input type="text" name="user-info" id="first-name" required></th>
+                        <th><label for="last-name">Last name*</label> </th>
+                        <th><input type="text" name="user-info" id="first-name" required></th>
+                    </tr>
+                    <tr>   
+                        <td><label for="country">Country*</label></td>
+                        <td><select name="country" id="country"> 
+                            <option value="" selected></option>
+                            <option value="denmark">Denmark</option>
+                            <option value="sweden">Sweden</option>
+                            <option value="norway">Norway</option>
+                            <option value="finland">Finland</option>
+                            <option value="germany">Germany</option></select></td>
+                    </tr>
+                    <tr>
+                        <td><label for="street">Address*</label> </td>
+                        <td><input type="text" name="address" id="street"></td>
+                        <td><label for="postcode">Postcode*</label></td>
+                        <td><input type="text" name="address" id="postcode"></td>
+                    </tr>
+                </table>
+                <div id="my-profile">
+                    <table>
+                    <tr>   
+                        <td rowspan="1"><label for="profile">Profile Description <br>
+                            <span style="font-style: italic; font-size: 15px; text-align: center;">
+                                Provide a short Description of <br> yourself 
+                            to be displayed <br> on our social media page</span> <br> </label></td>
+                        <td colspan="0"><textarea name="" id="profile" cols="140" rows="10"></textarea></td>
+                    </tr>
+                    </table>
+                </div>
+                <h4>Use the same address for billing and shipping? Uncheck below to fill out a seperate address.</h4>
+                
+                <!-- toggle checkbox  -->
+                  <div>
+                       <label class="checkbox-label" for="toggle">Shipping Address</label> 
+                        <input onclick="hideDiv()" class="checkbox" type="checkbox" id="toggle" checked> 
+               
+                              
+                <!-- shipping hidden in checked -->
+                <div class="shipping">
+               <h4>Shipping Address</h4>
+               <table>
+                    <tr>
+                        <th><label for="first-name">First name*</label></th>
+                        <th><input type="text" name="user-info" id="first-name" required></th>
+                        <th><label for="last-name">Last name*</label> </th>
+                        <th><input type="text" name="user-info" id="first-name" required></th>
+                    </tr>
+                    <tr>   
+                        <td><label for="country">Country*</label></td>
+                        <td><select name="country" id="country"> 
+                        <option value="" selected></option>
+                        <option value="denmark">Denmark</option>
+                        <option value="sweden">Sweden</option>
+                        <option value="norway">Norway</option>
+                        <option value="finland">Finland</option>
+                        <option value="germany">Germany</option></select></td>
+                    </tr>
+                    <tr>
+                        <td><label for="street">Address*</label> </td>
+                        <td><input type="text" name="address" id="street"></td>
+                        <td><label for="postcode">Postcode*</label></td>
+                        <td><input type="text" name="address" id="postcode"></td>
+                    </tr>
+                </table>
+                 <table class="profile2">
+                    <tr>   
+                        <td rowspan="1"><label for="profile2">Profile Description</label> <br>
+                            <span style="font-style: italic; font-size: 15px; text-align: center;">
+                                Provide a short Description of <br> yourself 
+                            to be displayed <br> on our social media page</span> <br> </td>
+                        <td colspan="4"><textarea name="" id="profile2" cols="140" rows="10"></textarea></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <button class="button"><a href="index2.html"><strong>Next step</strong></a></button> 
+    </form>
+</section>
+<script>
+    function hideDiv() {
+      const x = document.getElementById("my-profile");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    </script>
+    </body>
+    </html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Your Custom Tailor</title>
+</head>
+<body>
+    <!-- header -->
+    <header class="header">
+        <div id="logo">Logo</div>
+        <div id="head-nav">Navigation</div>
+    </header>
+    <!-- section -->
+            <h1>Sign up to yourcustomtailor.com</h1>
+ 
+        <section class="step2">
+       <!-- Contact -->
+            <h2>Step 2/4: How can we reach you?</h2>
+            <h4>Progress</h4>
+            <div class="progress-bar">
+                <div id="completed2"></div> 
+            </div>
+        <h4>We will probably need to stay in touch somehow. Let's know how we can reach you?</h4>
+    <form action="/index3.html">
+        <table>
+            <tr>
+                <th><label for="email">Email*</label></th>
+                <th><input type="email" name="contact" id="email" required></th>
+                <th><label for="phone">Phone</label> </th>
+                <th><input type="text" pattern="[0-9]" name="contact" id="phone"></th>
+            </tr>
+            <tr>   
+                <td><label for="password">Password*</label></td>
+                <td><input type="password" name="contact" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                    title="Must contain at least one uppercase and lowercase letter, and at least 10 or more characters" required></td>
+            </tr>
+            <tr>
+                <td><label for="re-passord">Re-enter Password*</label> </td>
+                <td><input type="password" name="contact" id="re-passord" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                    title="Must contain at least one uppercase and lowercase letter, and at least 10 or more characters" required></td>
+            </tr>
+        </table>
+        <h4>I want to sign up for the newsletter</h4>
+        <table class="news">
+            <tr>
+                <th><label for="weekly"> Weekly News</label></th>
+                <th><input type="radio" id="weekly" name="contact" checked> </th>
+                <th><label for="monthly"> Monthly News</label></th>
+                <th><input type="radio" id="monthly" name="contact"> </th>
+                <th><label for="no-send">Don't send me news</label></th>
+                <th><input type="radio" id="no-send" name="contact"> </th>
+            </tr>
+        </table>
+       
+        <button class="button"><a href="index3.html"> <strong>Next step</strong></a></button> 
+    </form>
+    
+        <button class="back"><a href="index1.html"> <strong>Previous Step</strong></a></button> 
+    </section>
+</body>
+</html> 
