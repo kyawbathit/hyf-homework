@@ -5,10 +5,11 @@ const paidPrice = [2500000,1100000];
 
 
 function estimatePrice (paidPrice, volume, garden) {
-  if (paidPrice < volume * 2.5 * 1000 + garden * 300) { 
-  console.log ("It's quite cheap.");
+  const currentRate = volume * 2.5 * 1000 + garden * 300;
+  if (paidPrice < currentRate) { 
+  console.log ("It is quite cheap.");
 } else {
-  console.log ("It's a bit expensive.");
+  console.log ("It is a bit expensive.");
 }
 };
 estimatePrice(paidPrice[0], volume[0], garden[0]); //expensive
