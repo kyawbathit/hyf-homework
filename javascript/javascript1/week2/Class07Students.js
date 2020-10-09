@@ -26,4 +26,4 @@ console.log(addStudentToClass("Kjaw7")); // No more student
 function getNumberOfStudents() {
   return class07Students.length;
  }
-console.log(getNumberOfStudents(7));
+console.log(getNumberOfStudents()); // 7

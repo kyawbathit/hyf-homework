@@ -9,5 +9,5 @@ function chooseWithWeather (temperature){
     return clothes[0];
   }
 }
-const clothesToWear = chooseWithWeather(20);
-console.log(clothesToWear); //'Jeans and Raincoat'
+const clothesToWear = chooseWithWeather(30);
+console.log(clothesToWear); //"Short and T-shirt"
