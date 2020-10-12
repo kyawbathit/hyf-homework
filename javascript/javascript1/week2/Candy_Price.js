@@ -5,10 +5,7 @@ const candyTypes = {
     toffee: 1.1,
     chewinggum: 0.03,
 }
-// const sweet = 0.5;
-// const chocolate = 0.7;
-// const toffee = 1.1;
-// const chewinggum = 0.03;
+
 function addCandy (candyType, weight) {
   let kr = candyType * weight;
   return boughtCandy.push(kr);
@@ -31,5 +28,5 @@ function canBuyMoreCandy() {
     console.log(`Enough candy for you!`);
   }
 }
-console.log(amountToSpend); // 23.72631409587409
+console.log(Math.round(amountToSpend)); // 85
 canBuyMoreCandy(); //'Enough candy for you!'
