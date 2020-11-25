@@ -19,5 +19,5 @@ function findChar (str) {
     chars[l] + 1);});
     return chars;
 }
-findChar(danishString); //{ total: 1, 'å': 1 }
-findChar(danishString2); //{ total: 4, 'å': 1, 'ø': 2, 'æ': 1 }
+console.log(findChar(danishString)); //{ total: 1, 'å': 1 }
+console.log(findChar(danishString2)); //{ total: 4, 'å': 1, 'ø': 2, 'æ': 1 }
