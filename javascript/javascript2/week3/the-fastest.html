@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <title>Fastest Presser</title>
+</head>
+<body>
+    <h1>Fastest Presser</h1>
+    <p id="para" style="color: blue;">Type amount of time and press the button</p>
+    <input type="number" id="input" placeholder="0 sec" min="1"><br><br>
+    <button id="starter" type="button">Start game!</button>
+    
+        <hr>
+    <div id="main">
+        <div class="playground">
+            <h3 class = "animated swing">Press S</h3>
+            <p id="score-s" style="color: blue;"></p>
+            <h2 id="win-s"></h2>
+        </div>
+        <hr id="vline">
+        <div class="playground">
+            <h3 class = "animated swing">Press L</h3>
+            <p id="score-l" style="color: blue;"></p>
+            <h2 id="win-l"></h2>
+        </div>
+    </div>
+
+    <script src="fastest.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/confetti-js@0.0.13/dist/index.min.js"></script>
+</body>
+</html>
