@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+</head>
+<body>
+    <main>
+    <h1>Weather Today</h1>
+    <input type="text" id="city" placeholder="Find a city">
+    <button type="button" id="weather-btn">Submit</button>
+    <div><button type="button" id="current-location">Your Current Position</button>
+    </div>
+    <p></p>
+    <div class="weather-container">
+        <h1 id="city-name"></h1>
+        <div class="weather-main">
+          <div> <h2 id="temperature"></h2>
+            <!-- <span>&#8451;</span> -->
+          </div>
+          <div><h2 id="weather-info"></h2></div>
+          <div><img id="weather-icon"/></div>
+        </div>
+        <div id="wind-speed" class="bottom-details"></div>
+        <div id="humidity" class="bottom-details"></div>
+        <div id="sunrise" class="bottom-details"></div>
+        <div id="sunset" class="bottom-details"></div>
+      </div>
+    </div>
+    </main>
+    <script src="weather.js"></script>
+</body>
+</html>
