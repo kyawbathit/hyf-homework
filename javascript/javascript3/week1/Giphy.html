@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>giphy</title>
+</head>
+<body>
+    <h1>Giphy Finder</h1>
+    <form id="searchForm">
+        <div class="form-div">
+            <label for="search-input">Type a word below</label><br>
+            <input type="text" id="search-column"> <br> 
+            <label for="search-input">Number of Gifs</label><br>
+            <input type="number" min="1" id="search-num"> 
+            <p id="alert"></p>
+        </div>
+        <button type="submit" id="get-gifs">Find your gifs</button>
+        
+    </form>
+    <div>
+        <ul id="output"></ul>
+    </div>
+    <script src="gif.js"></script>
+</body>
+</html>
